@@ -10,7 +10,7 @@
 - Using **Canny edge detection** to highlight the boundaries of the coins.It finds the edges in an image based on intensity changes. Considered 30 as lower threshold and 100 as upper threshold which gave the best results.
 - **Dilation** to strengthen edges. It thickens the edges detected by Canny edge detection.The dilation is applied 5 times to make edges thicker.
 - **Finding and drawing Contours** Using the findcontours and drawcontours operations. Helps in object detection and segmentation.
-![Coin Detection Output](contours_coin.png)
+![Coin Detection Output](output/contours_coin.png)
 
 
 ### **b. Segmentation using the Watershed Algorithm**
@@ -30,7 +30,7 @@
    - Marker Labelling for Watershed Algorithm - Labels connecte foreground regions with unique numbers.
    - Watershed Algorithm separates objects by treating the grayscale image like a topographic map. The "inferno" colormap highlights different segments clearly.
 
-![Segmentation Output](watershed_output.png)
+![Segmentation Output](output/watershed_output.png)
 
 
 #### **c. Counting the Coins**
@@ -66,13 +66,13 @@
 
 ### **Output Example**
 <p align="center">
-  <img src="img3.jpeg" alt="Image 1" width="350">
-  <img src="img2.jpeg" alt="Image 2" width="350">
-  <img src="img1.jpeg" alt="Image 3" width="350">
+  <img src="input/img3.jpeg" alt="Image 1" width="350">
+  <img src="input/img2.jpeg" alt="Image 2" width="350">
+  <img src="input/img1.jpeg" alt="Image 3" width="350">
 </p>
 A stitched panorama from multiple images:
 
-![Stitched Panorama](stitched_panorama.jpg)
+![Stitched Panorama](output/stitched_panorama.jpg)
 
 ---
 
