@@ -10,7 +10,7 @@
 - Using **Canny edge detection** to highlight the boundaries of the coins.It finds the edges in an image based on intensity changes. Considered 30 as lower threshold and 100 as upper threshold which gave the best results.
 - **Dilation** to strengthen edges. It thickens the edges detected by Canny edge detection.The dilation is applied 5 times to make edges thicker.
 - **Finding and drawing Contours** Using the findcontours and drawcontours operations. Helps in object detection and segmentation.
-![Coin Detection Output](contours_coin.png)
+![Coin Detection Output](output/contours_coin.png)
 
 
 ### **b. Segmentation using the Watershed Algorithm**
@@ -30,8 +30,26 @@
    - Marker Labelling for Watershed Algorithm - Labels connecte foreground regions with unique numbers.
    - Watershed Algorithm separates objects by treating the grayscale image like a topographic map. The "inferno" colormap highlights different segments clearly.
 
-![Segmentation Output](watershed_output.png)
+![Segmentation Output](output/watershed_output.png)
 
+- **Segmenting each coin** 
+<p align="center">
+  <img src="output/coin_1.png" alt="Image 1" width="50">
+  <img src="output/coin_2.png" alt="Image 2" width="50">
+  <img src="output/coin_3.png" alt="Image 3" width="50">
+    <img src="output/coin_4.png" alt="Image 3" width="50">
+  <img src="output/coin_5.png" alt="Image 3" width="50">
+   <img src="output/coin_6.png" alt="Image 1" width="50">
+  <img src="output/coin_7.png" alt="Image 2" width="50">
+  <img src="output/coin_8.png" alt="Image 3" width="50">
+  <img src="output/coin_9.png" alt="Image 3" width="50">
+   <img src="output/coin_10.png" alt="Image 1" width="50">
+  <img src="output/coin_11.png" alt="Image 2" width="50">
+  <img src="output/coin_12.png" alt="Image 3" width="50">
+  <img src="output/coin_13.png" alt="Image 3" width="50">
+   <img src="output/coin_14.png" alt="Image 1" width="50">
+
+</p>
 
 #### **c. Counting the Coins**
 - Each contour corresponds to a separate coin .
@@ -66,13 +84,13 @@
 
 ### **Output Example**
 <p align="center">
-  <img src="img3.jpeg" alt="Image 1" width="350">
-  <img src="img2.jpeg" alt="Image 2" width="350">
-  <img src="img1.jpeg" alt="Image 3" width="350">
+  <img src="input/img3.jpeg" alt="Image 1" width="350">
+  <img src="input/img2.jpeg" alt="Image 2" width="350">
+  <img src="input/img1.jpeg" alt="Image 3" width="350">
 </p>
 A stitched panorama from multiple images:
 
-![Stitched Panorama](stitched_panorama.jpg)
+![Stitched Panorama](output/stitched_panorama.jpg)
 
 ---
 
